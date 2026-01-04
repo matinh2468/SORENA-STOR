@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>همه پیشنهادات ویژه</title>
+
+<style>
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+body {
+  margin:0;
+  background:#f5f5f5;
+  font-family:'Vazir',sans-serif;
+}
+
+header {
+  background:#ff0055;
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.container { padding:15px; }
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:white;
+  padding:10px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  transition:0.2s;
+  position:relative;
+}
+
+.card img {
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.card-title {
+  font-size:15px;
+  margin-top:10px;
+  font-weight:bold;
+  color:#333;
+  height:40px;
+  overflow:hidden;
+}
+
+.price {
+  margin-top:8px;
+  color:#ff0055;
+  font-weight:bold;
+  font-size:15px;
+}
+
+/* ناموجود */
+.unavailable {
+  opacity:0.45;
+  pointer-events:none;
+}
+
+.unavailable-label {
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:#000;
+  color:white;
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:8px;
+}
+
+.back-btn {
+  display:block;
+  width:180px;
+  margin:25px auto;
+  text-align:center;
+  background:#0066ff;
+  padding:10px;
+  border-radius:10px;
+  color:white;
+  text-decoration:none;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<header>🔥 برنج های درجه ۱ فروشگاه میر جلیل هاشمی</header>
+
+<div class="container">
+<div class="grid">
+
+<!-- موجود -->
+<div class="card">
+  <img id="hash-img" src="bereng/hashemi.jpg">
+  <div class="card-title">برنج هاشمی درجه ۱</div>
+  <div class="price">۳۵۰,۰۰۰ تومان</div>
+</div>
+
+<!-- ناموجود ها (طبق عکس) -->
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/pakistani1.jpg">
+<div class="card-title">برنج پاکستانی باسماتی عالی</div>
+<div class="price">۵۵۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/pakistani2.jpg">
+<div class="card-title">برنج پاکستانی</div>
+<div class="price">۱۳,۰۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/shiroodi.jpg">
+<div class="card-title">برنج شیرودی</div>
+<div class="price">۲,۷۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/hashemi2.jpg">
+<div class="card-title">برنج هاشمی</div>
+<div class="price">۳,۵۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/miran.jpg">
+<div class="card-title">برنج پاکستانی میران</div>
+<div class="price">۱۴,۰۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/hendi.jpg">
+<div class="card-title">برنج هندی دانه‌بلند مزه‌دار (۱۰ کیلویی)</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/nimdone.jpg">
+<div class="card-title">برنج ایرانی نیم‌دانه درجه ۱</div>
+<div class="price">۲,۴۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/fajr.jpg">
+<div class="card-title">برنج فجر دانه‌بلند</div>
+<div class="price">۲,۳۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/anbarbo.jpg">
+<div class="card-title">برنج عنبر بو</div>
+<div class="price">۲,۶۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/tarom.jpg">
+<div class="card-title">برنج طارم هندی ۱۰ کیلویی</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/hasani.jpg">
+<div class="card-title">برنج حسنی</div>
+<div class="price">۳,۱۰۰,۰۰۰ تومان</div>
+</div>
+
+<div class="card unavailable">
+<span class="unavailable-label">ناموجود</span>
+<img src="bereng/fajr2.jpg">
+<div class="card-title">برنج ایرانی فجر</div>
+<div class="price">۲,۶۰۰,۰۰۰ تومان</div>
+</div>
+
+</div>
+</div>
+
+<a href="index.html" class="back-btn">بازگشت به صفحه اصلی</a>
+
+<script>
+let riceImages = ["bereng/hashemi.jpg","bereng/HASHEMI2.jpg"];
+let index = 0;
+setInterval(() => {
+  index = (index + 1) % riceImages.length;
+  document.getElementById("hash-img").src = riceImages[index];
+}, 5000);
+</script>
+
+</body>
+</html>

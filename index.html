@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.4">
+<title>فروشگاه میر جلیل هاشمی -سورنا</title>
+
+<style>
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+body {
+    margin: 0;
+    font-family: 'Vazir', sans-serif;
+    background: #f2f3f7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg,#015eff,#13e8cf);
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 0 0 25px 25px;
+}
+.slider img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    transition: opacity 1.5s ease-in-out;
+}
+.fade {
+    animation: fadeEffect 1.5s;
+}
+@keyframes fadeEffect {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
+
+/* UNIVERSAL BOX */
+.box {
+    background: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+.box-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: center;
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.category-circle {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+    transition: 0.3s;
+}
+.category-circle::after {
+    content: '';
+    background: rgba(0,0,0,0.45);
+    position: absolute; inset: 0;
+}
+.category-circle span { position: relative; z-index: 5; }
+.category-circle:hover { transform: scale(1.15); }
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 26px;
+    margin: 25px 20px 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* AMAZING OFFERS */
+.amazing-offers {
+    background: #ffecec;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+.product-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 18px;
+    padding: 10px 0;
+}
+.product {
+    width: 150px;
+    background: #1f1f1f;
+    border-radius: 14px;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 12px;
+    transition: 0.3s;
+}
+.product:hover { transform: scale(1.06); }
+.product img {
+    width: 100%;
+    height: 115px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #bbb;
+    margin-top: 5px;
+}
+.sale-price {
+    color: #ffd700;
+    font-weight: bold;
+}
+.discount {
+    background: #ff4d4d;
+    padding: 3px 7px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+/* VIEW ALL BUTTON */
+.view-all-btn {
+    background: #ff006a;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+.view-all-btn:hover { background: #d60055; }
+
+/* QUICK ACCESS */
+.contact-time-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.contact-time-buttons a {
+    background: #0066ff;
+    padding: 15px 28px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.contact-time-buttons a:hover { background: #004ed0; }
+
+</style>
+</head>
+
+<body>
+
+<header> فروشگاه میر جلیل هاشمی</header>
+
+<!-- SLIDER -->
+<div class="slider">
+    <img id="sliderImage" src="ASK/aks10.jpeg" class="fade">
+</div>
+
+<!-- CATEGORIES -->
+<div class="box">
+    <div class="box-title">دسته‌بندی‌ها</div>
+
+    <div class="categories">
+        <a href="MTY7.html" class="category-circle" style="background-image:url('img/rice.jpg');"><span>برنج</span></a>
+        <a href="MTY3.html" class="category-circle" style="background-image:url('img/beans.jpg');"><span>حبوبات</span></a>
+        <a href="MTY8.html" class="category-circle" style="background-image:url('img/nuts.jpg');"><span>آجیل</span></a>
+        <a href="pishnahad.html" class="category-circle" style="background-image:url('img/offer.jpg');"><span>پیشنهادات</span></a>
+        <a href="عسل/index.html" class="category-circle" style="background-image:url('img/offer.jpg');"><span>عسل</span></a>
+    </div>
+</div>
+
+<!-- AMAZING OFFERS -->
+<div class="section-title">🔥 شگفت‌انگیز امروز</div>
+
+<div class="amazing-offers">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h2>پیشنهاد ویژه</h2>
+        <a href="pishnahad.html" class="view-all-btn">مشاهده همه</a>
+    </div>
+
+    <div class="product-row">
+
+        <div class="product">
+            <img src="P1/p1.jpg">
+            <p>تن ماهی سیشل تن</p>
+            <p class="old-price">۱۲۰,۰۰۰ تومان</p>
+            <p class="sale-price">۷۹,۰۰۰ تومان <span class="discount">۴۶٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/s0.webp">
+            <p>   نوشابه کوکاکولا 1.5</p>
+            <p class="old-price">۵۷,۹۰۰ تومان</p>
+            <p class="sale-price">۵۰,۰۰۰ تومان <span class="discount">۴۶٪</span></p>
+        </div>
+
+    
+
+        <div class="product">
+            <img src="P1/p2.webp">
+            <p>اسمارتیز banti</p>
+            <p class="old-price">۱۱,۳۰۰ تومان</p>
+            <p class="sale-price">۱۰,۰۰۰ تومان <span class="discount">۱۲٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/p3.jpg">
+            <p>خرما مشکین</p>
+            <p class="old-price">۲۳۰,۰۰۰ تومان</p>
+            <p class="sale-price">۲۰۰,۰۰۰ تومان <span class="discount">۱۳٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/p4.jpg">
+            <p>رب گوجه رعنا</p>
+            <p class="old-price">۹۹,۹۰۰ تومان</p>
+            <p class="sale-price">95,۰۰۰ تومان <span class="discount">۲۵٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/s1.jpg">
+            <p>آب میوه شریسا</p>
+            <p class="old-price">100,۹۰۰ تومان</p>
+            <p class="sale-price">50,۰۰۰ تومان <span class="discount">۲۵٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/s2.webp">
+            <p>رب شیشه چین چین</p>
+            <p class="old-price">۱۰۰,۰۰۰ تومان</p>
+            <p class="sale-price">۷۵,۰۰۰ تومان <span class="discount">۲۵٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/s3.png">
+            <p>آب میوه جتبی</p>
+            <p class="old-price">۱۰۰,۰۰۰ تومان</p>
+            <p class="sale-price">۷۰,۰۰۰ تومان <span class="discount">۳۰٪</span></p>
+        </div>
+
+        
+
+        <div class="product">
+            <img src="P1/s5.png">
+            <p>لیف ریرا</p>
+            <p class="old-price">۱۵۰,۹۰۰ تومان</p>
+            <p class="sale-price">۱۲۰,۰۰۰ تومان <span class="discount">۲۵٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P1/s6.png">
+            <p>تیغ زن butiti</p>
+            <p class="old-price">۴۰۰,۹۰۰ تومان</p>
+            <p class="sale-price">۳۰۰,۰۰۰ تومان <span class="discount">۳عدد   </span></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- AMAZING OFFERS 2 -->
+<div class="amazing-offers">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h2>پیشنهاد شوینده‌ها</h2>
+        <a href="pishnahad_2.html" class="view-all-btn">مشاهده همه</a>
+    </div>
+
+    <div class="product-row">
+
+        <div class="product">
+            <img src="HED/BADAM.jpg">
+            <p>شامپو هد اند شولدرز</p>
+            <p class="old-price">۴۵۰,۰۰۰ تومان</p>
+            <p class="sale-price">۳۵۰,۰۰۰ تومان <span class="discount">۲۲٪</span></p>
+        </div>
+
+        <div class="product">
+            <img src="P2/sham2.jpg">
+            <p>شامپو لوکس</p>
+            <p class="old-price">۱۲۴,۹۰۰ تومان</p>
+            <p class="sale-price">۸۸,۰۰۰ تومان <span class="discount">۳۵٪</span></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- QUICK ACCESS -->
+<div class="box">
+    <div class="box-title">دسترسی سریع</div>
+
+    <div class="contact-time-buttons">
+        <a href="ARTEBAT.html">📞 ارتباط با ما</a>
+        <a href="TIME.html">⏱ زمان کاری</a>
+    </div>
+</div>
+
+<script>
+let images = ["ASK/aks8.png", "ASK/aks9.jpg", "ASK/aks10.jpeg"];
+let index = 0;
+
+setInterval(() => {
+    index = (index + 1) % images.length;
+    let img = document.getElementById("sliderImage");
+    img.classList.remove("fade");
+    void img.offsetWidth;
+    img.src = images[index];
+    img.classList.add("fade");
+}, 5000);
+</script>
+
+</body>
+</html>
